@@ -1,0 +1,15 @@
+body{
+    direction: rtl;
+}
+.design_select_Red{
+    background-color: red;
+}
+
+
+.design_center{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+
