@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { List, ListItemText } from '@material-ui/core';
 //!!
-import { getAllTravels, getAllSites, getAllTickets, getUser, setUser, addOrder, getAllStations } from '../redux/actions';
+import { getAllTravels, getAllSites, getAllTickets, setUser, addOrder, getAllStations } from '../redux/actions';
 import '../../src/App.css';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -48,8 +48,6 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     //!!
     addOrder: (o) => dispatch(addOrder(o)),
     getStations: ()=> dispatch(getAllStations()),
-
-    getUser: ()=> dispatch(getUser()),
 })
 
 
@@ -118,7 +116,6 @@ function TravelsView(props) {
         props.getAllSites();
         // props.getAllTickets();
         props.getStations();
-        //     props.getUser();
     }, [])
 
 
@@ -140,9 +137,6 @@ function TravelsView(props) {
         console.log(listStations);
     }, [listStations])
 
-    // useEffect(() => {
-    //     console.log(user);
-    // }, [user])
 
 
     //משתנה סטייט לשמירת כמות הכרטיסים שנבחרה
@@ -303,3 +297,10 @@ export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(TravelsView);
+
+
+// אורית הלפר חברה לעבודה
+// נעמי גרמן חברה לכיתה
+// ציפי כהן שכנה מהרחוב(אמא של אורית)
+// אפרת מדמון מהעבודה 
+// דבורה אסוס

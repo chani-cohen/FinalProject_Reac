@@ -73,7 +73,7 @@ function Cart(props) {
         // props.getAllTickets();
         //props.getOrders();
         //!! ??
-        props.getOrdersOfThisCustomer('odaya1350@gmail.com');
+        props.getOrdersOfThisCustomer(props.user.email);
     }, [])
     const ordersOfThisCustomer_List = props.ordersOfThisCustomer_List || [];
 

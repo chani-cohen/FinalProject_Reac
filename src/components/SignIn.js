@@ -113,7 +113,7 @@ function SignIn(props) {
 
         if(u1.userTypeId===1)
           handleClick("/Management");
-                  
+
         else
           //העברה לדף ההזמנה הראשית
           handleClick("/NewOrder");

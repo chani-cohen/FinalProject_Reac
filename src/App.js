@@ -9,6 +9,8 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp'
 import NewOrder from './components/NewOrder';
 import Management from './components/Management';
+import AddNewTravel from './components/AddNewTravel';
+
 
 // import UsersContext from './data/UsersContext';
 // import SitesContext from './data/SitesContext';
@@ -55,6 +57,9 @@ function App() {
       </Route>
       <Route path="/Management">
         <Management/>
+      </Route>
+      <Route exact path="/AddNewTravel">
+        <AddNewTravel/>
       </Route>
       <Route exact path="/">
         <SignIn/>
